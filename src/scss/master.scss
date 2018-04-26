@@ -1,4 +1,9 @@
 // Variables
+@import 'variables';
+// Spectre
+@import 'node_modules/spectre.css/src/spectre';
 
-// Spectre.css
-@import '../../node_modules/spectre.css/src/spectre.scss';
+body {
+  background: #212121;
+  color: #fafafa;
+}
