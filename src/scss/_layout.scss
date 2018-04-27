@@ -1,0 +1,16 @@
+.container {
+  max-width: 1100px;
+}
+.hero {
+  background: linear-gradient(180deg, #007EC0 0%, rgba(0,72,140,0) 100%);
+  border: 1px solid #979797;
+  color: $light-color;
+  text-align: center;
+  padding: 4rem 2rem;
+  &__heading {
+    color: $light-color;
+  }
+}
+.overview {
+  padding: 160px 0;
+}
