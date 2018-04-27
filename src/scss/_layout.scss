@@ -126,6 +126,9 @@
 // Take Flight
 .take-flight {
   // @include laser;
+  .columns {
+    align-items: flex-start;
+  }
   background: linear-gradient(to right, $dark-green, $primary-color);
   padding: 8.889rem 0;
   color: $light-color;
@@ -143,7 +146,7 @@
   }
   &__connect {
     padding-right: 3rem;
-    border-right: 1px solid $primary-color;
+    // border-right: 1px solid $primary-color;
     h2 {
       color: $light-color;
       font-size: 2.667em;
@@ -158,6 +161,7 @@
   }
   &__form {
     padding-left: 3rem;
+    border-left: 1px solid $primary-color;
     form {
       display: flex;
       flex-flow: row wrap;
