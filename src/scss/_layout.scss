@@ -1,16 +1,165 @@
 .container {
-  max-width: 1100px;
+  max-width: 1440px;
 }
+.columns {
+  align-items: center;
+}
+// Hero
 .hero {
-  background: linear-gradient(180deg, #007EC0 0%, rgba(0,72,140,0) 100%);
-  border: 1px solid #979797;
+  // @include laser;
+  background: url('../img/Property_Front_Rendering.png') no-repeat,
+              linear-gradient(180deg, #007EC0 0%, rgba(0,72,140,0) 100%);
+  background-size: cover;
+  background-position: top center;
   color: $light-color;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6.444rem 1rem 14.667rem;
+  &__logo {
+    margin: 0 auto 4rem;
+  }
   &__heading {
     color: $light-color;
+    font-size: 5.333em;
+    margin: 0 0 1rem 0;
+  }
+  &__subhead {
+    font-size: 1.333em;
+    margin: 0 0 3rem 0;
+  }
+  &__cta {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    box-shadow: 4.9px 6.3px 13px 0 rgba(0,0,0,0.2);
   }
 }
+// Overview
 .overview {
-  padding: 160px 0;
+  // @include laser;
+  background: radial-gradient(#FEFEFE, #DAD9D7);
+  padding: 8.889rem 0;
+  p {
+    margin-bottom: 3.556rem;
+  }
+  &__stat, &__stat-title {
+    text-align: center;
+    display: block;
+    line-height: 1;
+  }
+  &__stat {
+    font-size: 5.333em;
+    font-family: 'bebas-neue';
+    color: $dark-green;
+    margin-bottom: 1.25rem;
+  }
+  &__stat-title {
+    font-weight: 700;
+    font-size: 1.333em;
+    color: $secondary-color;
+    margin-bottom: 2.25rem;
+  }
+  &__floor-plan {
+    margin: 3.667rem auto;
+  }
+}
+// Why Gate 77?
+.why-gate-77 {
+  // @include laser;
+  padding: 8.889rem 0;
+  h2 {
+    color: $dark-color;
+    font-family: 'open-sans';
+    font-weight: 600;
+    font-size: 1.333em;
+    margin-bottom: 2rem;
+  }
+  ul { // Benefits & amentities
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    list-style: none;
+    li {
+      width: 50%;
+      margin-bottom: 2.556rem;
+      i { // Fontawesome icon
+        margin-right: 1.333rem;
+        font-size: 1.667em;
+        color: $dark-green;
+      }
+    }
+  }
+}
+// Planned Enhancements
+.planned-enhancements {
+  // @include laser;
+  background: linear-gradient(to right, $secondary-color, $dark-blue);
+  color: $light-color;
+  padding: 8.889rem 0;
+  h1 {
+    color: $light-color;
+  }
+  .accordion {
+
+    &-header {
+      padding: 1rem;
+      font-size: 1.111em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      i {
+        color: $primary-color;
+        font-size: 1.667em;
+        margin-left: auto;
+      }
+    }
+    &-body {
+      padding: 1.667rem;
+    }
+    &:nth-of-type(odd) {
+      .accordion-header {
+        background: $light-blue;
+      }
+    }
+  }
+}
+// Take Flight
+.take-flight {
+  @include laser;
+  background: linear-gradient(to right, $dark-green, $primary-color);
+  padding: 8.889rem 0;
+  color: $light-color;
+  &__intro {
+    text-align: center;
+    max-width: 1168px;
+    margin: 0 auto 7.889rem;
+    h1 {
+      color: $light-color;
+    }
+    p {
+      font-size: 1.333em;
+      line-height: 48px;
+    }
+  }
+  &__connect {
+    padding-right: 3rem;
+    border-right: 1px solid $primary-color;
+    h2 {
+      color: $light-color;
+      font-size: 2.667em;
+    }
+    address {
+      margin: 1.833rem 0;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+  }
+  &__form {
+    padding-left: 3rem;
+  }
+  &__logo-bottom {
+    margin: 13.222rem auto 0;
+  }
 }
