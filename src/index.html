@@ -161,17 +161,28 @@
           </div>
           <div class="column col-8 col-xs-12 take-flight__form">
             <form class="" action="index.html" method="post">
-              <div class="form-group">
-                
+              <div class="form-group take-flight__form-name">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" name="name" id="name" value="">
               </div>
-              <label for="name">Name</label>
-              <input type="text" name="name" value="">
-              <label for="email">Email</label>
-              <input type="email" name="email" value="">
-              <label for="comments">Comments or questions</label>
-              <textarea name="comments" rows="8" cols="80"></textarea>
-              <input type="checkbox" name="current-tenant" value="">
-              <button type="submit" name="submit" class="btn btn-primary">I'm Interested</button>
+              <div class="form-group take-flight__form-email">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" name="email" id="email" value="">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="comments">Comments or questions</label>
+                <textarea class="form-input" name="comments" id="comments" rows="8" cols="100"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="current-tenant" class="take-flight__form-current-tenant">
+                  <input class="form-checkbox" type="checkbox" name="current-tenant" id="current-tenant" value="">
+                  <span class="checkbox"></span>
+                  <span class="checkmark"></span>
+                  <span>I’m a current tenant requesting service (check if yes)</span>
+                </label>
+              </div>
+
+              <button type="submit" name="submit" class="btn btn-primary take-flight__form-submit">I'm Interested</button>
             </form>
           </div>
           <div class="column col-12">
