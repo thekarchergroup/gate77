@@ -16,6 +16,10 @@
     padding: 6.444rem 1rem 14.667rem;
   }
   &__logo {
+    max-width: 50%;
+    @include bp(xl) {
+      max-width: 100%;
+    }
     margin: 0 auto 4rem;
   }
   &__heading {
@@ -102,10 +106,12 @@
     list-style: none;
     li {
       width: 100%;
+      margin-bottom: 1.25rem;
+      font-size: .875em;
       @include bp(xl) {
         width: 50%;
+        margin-bottom: 2.556rem;
       }
-      margin-bottom: 2.556rem;
       &:last-child {
         margin-bottom: 0;
       }
@@ -132,6 +138,12 @@
   }
   h1 {
     color: $light-color;
+  }
+  p {
+    margin-bottom: 4rem;
+    @include bp(xl) {
+      margin-bottom: 0;
+    }
   }
 }
 // Take Flight
