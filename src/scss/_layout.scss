@@ -226,6 +226,7 @@
       width: 100%;
       &__wrap {
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         width: 100%;
         cursor: pointer;
@@ -239,7 +240,7 @@
           background: $light-color;
           width: 1.778em;
           height: 1.778em;
-          margin-right: 2rem;
+          margin: 0 2rem .5rem 0;
           box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.2);
           position: relative;
           cursor: pointer;
@@ -273,6 +274,9 @@
     }
   }
   &__logo-bottom {
-    margin: 13.222rem auto 0;
+    margin: 6rem auto 0;
+    @include bp(xl) {
+      margin: 13.222rem auto 0;
+    }
   }
 }
