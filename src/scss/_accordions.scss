@@ -1,0 +1,25 @@
+.accordion {
+
+  .accordion-header { // Has to be explicitly declared vs. using &-header to override
+    padding: 1rem;
+    font-size: 1.111em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+      color: $primary-color;
+      font-size: 1.667em;
+      margin-left: auto;
+    }
+  }
+  &-body {
+    padding: 1.667rem;
+  }
+  &:nth-of-type(odd) {
+    .accordion-header {
+      background: $light-blue;
+    }
+  }
+}

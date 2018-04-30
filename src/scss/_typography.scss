@@ -3,8 +3,13 @@ h1,h2,h3,h4,h5,h6 {
   color: $secondary-color;
 }
 h1 {
-  font-size: 3.556em;
+  @include bp(xl) {
+    font-size: 3.556em;
+  }
 }
 p {
-  line-height: 2.2;
+  line-height: 2;
+  @include bp(xl) {
+    line-height: 2.2;
+  }
 }

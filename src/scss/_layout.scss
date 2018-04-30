@@ -1,8 +1,6 @@
 .container {
   max-width: 1440px;
-}
-.columns {
-  align-items: center;
+  padding: 0 2rem;
 }
 // Hero
 .hero {
@@ -13,17 +11,26 @@
   background-position: top center;
   color: $light-color;
   text-align: center;
-  padding: 6.444rem 1rem 14.667rem;
+  padding: 4rem 1rem 8rem;
+  @include bp(xl) {
+    padding: 6.444rem 1rem 14.667rem;
+  }
   &__logo {
     margin: 0 auto 4rem;
   }
   &__heading {
     color: $light-color;
-    font-size: 5.333em;
+    font-size: 3em;
+    @include bp(xl) {
+      font-size: 5.333em;
+    }
     margin: 0 0 1rem 0;
   }
   &__subhead {
-    font-size: 1.333em;
+    font-size: 1em;
+    @include bp(xl) {
+      font-size: 1.333em;
+    }
     margin: 0 0 3rem 0;
   }
   &__cta {
@@ -34,9 +41,11 @@
 }
 // Overview
 .overview {
-  // @include laser;
   background: radial-gradient(#FEFEFE, #DAD9D7);
-  padding: 8.889rem 0;
+  padding: 4rem 0;
+  @include bp(xl) {
+    padding: 8.889rem 0;
+  }
   p {
     margin-bottom: 3.556rem;
   }
@@ -46,14 +55,20 @@
     line-height: 1;
   }
   &__stat {
-    font-size: 5.333em;
+    font-size: 4em;
+    @include bp(xl) {
+      font-size: 5.333em;
+    }
     font-family: 'bebas-neue';
     color: $dark-green;
     margin-bottom: 1.25rem;
   }
   &__stat-title {
     font-weight: 700;
-    font-size: 1.333em;
+    font-size: 1em;
+    @include bp(xl) {
+      font-size: 1.333em;
+    }
     color: $secondary-color;
     margin-bottom: 2.25rem;
   }
@@ -63,14 +78,22 @@
 }
 // Why Gate 77?
 .why-gate-77 {
-  // @include laser;
-  padding: 8.889rem 0;
-  h2 {
+  .columns {
+    align-items: center;
+  }
+  padding: 4rem 0;
+  @include bp(xl) {
+    padding: 8.889rem 0;
+  }
+  h2 { // Benefits title
     color: $dark-color;
     font-family: 'open-sans';
     font-weight: 600;
     font-size: 1.333em;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
+    @include bp(xl) {
+      margin: 0 0 2rem 0;
+    }
   }
   ul { // Benefits & amentities
     display: flex;
@@ -78,9 +101,17 @@
     margin: 0;
     list-style: none;
     li {
-      width: 50%;
+      width: 100%;
+      @include bp(xl) {
+        width: 50%;
+      }
       margin-bottom: 2.556rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
       i { // Fontawesome icon
+        width: 32px;
+        text-align: center;
         margin-right: 1.333rem;
         font-size: 1.667em;
         color: $dark-green;
@@ -90,63 +121,53 @@
 }
 // Planned Enhancements
 .planned-enhancements {
-  // @include laser;
+  .columns {
+    align-items: center;
+  }
   background: linear-gradient(to right, $secondary-color, $dark-blue);
   color: $light-color;
-  padding: 8.889rem 0;
+  padding: 4rem 0;
+  @include bp(xl) {
+    padding: 8.889rem 0;
+  }
   h1 {
     color: $light-color;
-  }
-  .accordion {
-
-    &-header {
-      padding: 1rem;
-      font-size: 1.111em;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-
-      i {
-        color: $primary-color;
-        font-size: 1.667em;
-        margin-left: auto;
-      }
-    }
-    &-body {
-      padding: 1.667rem;
-    }
-    &:nth-of-type(odd) {
-      .accordion-header {
-        background: $light-blue;
-      }
-    }
   }
 }
 // Take Flight
 .take-flight {
-  // @include laser;
   .columns {
     align-items: flex-start;
   }
+  padding: 4rem 0;
+  @include bp(xl) {
+    padding: 8.889rem 0;
+  }
   background: linear-gradient(to right, $dark-green, $primary-color);
-  padding: 8.889rem 0;
   color: $light-color;
   &__intro {
     text-align: center;
     max-width: 1168px;
-    margin: 0 auto 7.889rem;
+    margin: 0 0 2rem 0;
+    @include bp(xl) {
+      margin: 0 auto 7.889rem;
+    }
     h1 {
       color: $light-color;
     }
     p {
-      font-size: 1.333em;
-      line-height: 48px;
+      font-size: 1em;
+      line-height: 2;
+      @include bp(xl) {
+        font-size: 1.333em;
+        line-height: 48px;
+      }
     }
   }
   &__connect {
     padding-right: 3rem;
-    // border-right: 1px solid $primary-color;
+    margin-bottom: 2rem;
+    @include bp(xl)
     h2 {
       color: $light-color;
       font-size: 2.667em;
@@ -160,8 +181,10 @@
     }
   }
   &__form {
-    padding-left: 3rem;
-    border-left: 1px solid $primary-color;
+    @include bp(xl) {
+      padding-left: 3rem;
+      border-left: 1px solid $primary-color;
+    }
     form {
       display: flex;
       flex-flow: row wrap;
@@ -180,6 +203,9 @@
     }
     .form-name, .form-email {
       width: 47%;
+      @include bp(xs) {
+        width: 100%;
+      }
     }
     .form-email {
       margin-left: auto;

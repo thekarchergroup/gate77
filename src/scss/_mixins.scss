@@ -1,0 +1,22 @@
+// Media queries
+@mixin bp($size) {
+  @if $size == xs {
+    @media (max-width: 480px) { @content };
+  }
+  @if $size == small {
+    @media (min-width: 481px) and (max-width: 600px) { @content };
+  }
+  @if $size == medium {
+    @media (min-width: 601px) and (max-width: 840px) { @content };
+  }
+  @if $size == large {
+    @media (min-width: 841px) and (max-width: 960px) { @content };
+  }
+  @if $size == xl {
+    @media (min-width: 961px) { @content };
+  }
+}
+// Util
+@mixin laser {
+  border: 1px solid red;
+}

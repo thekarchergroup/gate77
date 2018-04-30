@@ -11,7 +11,7 @@ $primary-color-light: lighten($primary-color, 3%) !default;
 $secondary-color: #003A70 !default;
 $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
-// Custom
+// Custom colors
 $dark-green: #0B9848;
 $dark-blue: #002B53;
 $light-blue: #00488C;
@@ -69,12 +69,16 @@ $unit-12: 2.4rem !default;
 $unit-16: 3.2rem !default;
 
 // Font sizes
-$html-font-size: 18px !default;
-$html-line-height: 1.6 !default;
+$html-font-size: 16px;
+$html-line-height: 1.5 !default;
 $font-size: 1rem !default;
 $font-size-sm: .75rem !default;
 $font-size-lg: 1.25rem !default;
 $line-height: 1rem !default;
+@include bp(large) {
+  $html-font-size: 18px !default;
+  $html-line-height: 1.6 !default;
+}
 
 // Sizes
 $layout-spacing: $unit-2 !default;

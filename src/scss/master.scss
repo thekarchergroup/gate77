@@ -1,5 +1,7 @@
 // Helpers
 @import 'helpers';
+// Mixins
+@import 'mixins';
 // Variables
 @import 'variables';
 // Spectre
@@ -7,8 +9,9 @@
 // Typography
 @import url("https://use.typekit.net/zmw7wib.css");
 @import 'typography';
-// Elements
+// Elements/Components
 @import 'buttons';
 @import 'callouts';
+@import 'accordions';
 // Layout
 @import 'layout';
