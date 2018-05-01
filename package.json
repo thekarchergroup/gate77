@@ -20,12 +20,15 @@
   },
   "homepage": "https://github.com/thekarchergroup/gate77#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.9.0",
     "parcel-bundler": "^1.7.1",
     "spectre.css": "^0.5.1"
   },
   "dependencies": {
+    "counter": "^0.1.1",
+    "counter.js": "^1.0.8",
     "npm": "^6.0.0"
   }
 }
