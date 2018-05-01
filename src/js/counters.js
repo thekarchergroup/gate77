@@ -1,10 +1,6 @@
 // stat counter
 const counterSpeed = 100; // ms
-let counters = document.querySelectorAll('[data-counter]');
-
-function unmount(counter) {
-  counter.removeAttribute('data-counter-end');
-}
+const counters = document.querySelectorAll('[data-counter]');
 
 counters.forEach(counter => {
   let end = counter.getAttribute('data-counter-end');
