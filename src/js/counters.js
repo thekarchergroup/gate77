@@ -1,3 +1,7 @@
+// Elements with data-counter attribute will count to their data-counter-end value when in viewport
+
+// IntersectionObserver Polyfill
+import 'intersection-observer';
 // stat counter
 const counterSpeed = 100; // ms
 const counters = document.querySelectorAll('[data-counter]');
@@ -20,4 +24,4 @@ counters.forEach(counter => {
       });
   }, options);
   io.observe(counter);
-})
+});
