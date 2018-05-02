@@ -1,3 +1,10 @@
+body {
+  font-size: 18px;
+  line-height: 2;
+  @include bp(xl) {
+    line-height: 2.2;
+  }
+}
 h1,h2,h3,h4,h5,h6 {
   font-family: 'bebas-neue';
   color: $secondary-color;
@@ -5,11 +12,5 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   @include bp(xl) {
     font-size: 3.556em;
-  }
-}
-p {
-  line-height: 2;
-  @include bp(xl) {
-    line-height: 2.2;
   }
 }
