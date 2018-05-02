@@ -30,13 +30,17 @@
       }
     }
     .now-leasing {
-      display: none;
+      position: absolute;
+      top: 45%;
+      right: -8%;
+      width: 5rem;
+      z-index: 0;
+      // display: none;
       @include bp(xl) {
         display: block;
-        position: absolute;
         top: 25%;
-        right: -35%;
-        z-index: 0;
+        right: -33%;
+        width: auto;
       }
     }
   }
