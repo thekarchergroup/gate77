@@ -16,11 +16,29 @@
     padding: 6.444rem 1rem 14.667rem;
   }
   &__logo {
-    max-width: 50%;
-    @include bp(xl) {
-      max-width: 100%;
-    }
+    // @include laser;
+    position: relative;
+    display: inline-block;
     margin: 0 auto 4rem;
+    img:first-child {
+      position: relative;
+      z-index: 1;
+      max-width: 75%;
+      margin: 0 auto;
+      @include bp(xl) {
+        max-width: 100%;
+      }
+    }
+    .now-leasing {
+      display: none;
+      @include bp(xl) {
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: -35%;
+        z-index: 0;
+      }
+    }
   }
   &__heading {
     color: $light-color;
