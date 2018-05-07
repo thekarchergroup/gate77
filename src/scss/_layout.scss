@@ -292,6 +292,10 @@
       }
     }
     &-submit {
+      margin: 0 auto;
+      @include bp(large) {
+        margin: 0;
+      }
       text-transform: uppercase;
       box-shadow: 4.9px 6.3px 13px 0 rgba(0,0,0,0.2);
     }
