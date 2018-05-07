@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx parcel ./src/index.html",
-    "build": "npx parcel build ./src/index.html --public-url ./",
+    "dev": "./node_modules/.bin/parcel ./src/index.html",
+    "build": "./node_modules/.bin/parcel build ./src/index.html & ./node_modules/.bin/parcel build ./src/success.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
