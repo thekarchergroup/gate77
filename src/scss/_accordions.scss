@@ -1,5 +1,5 @@
 .accordion {
-
+// @include laser;
   .accordion-header { // Has to be explicitly declared vs. using &-header to override
     padding: 1rem;
     font-size: 1.111em;
@@ -14,12 +14,15 @@
       margin-left: auto;
     }
   }
-  &-body {
-    padding: 1.667rem;
+  .accordion-body {
+    margin: 0;
   }
   &:nth-of-type(odd) {
     .accordion-header {
       background: $light-blue;
     }
+  }
+  input:checked ~ .accordion-body {
+    padding: 1.667rem;
   }
 }
