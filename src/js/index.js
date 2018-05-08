@@ -4,4 +4,4 @@ import '../scss/master.scss';
 import './jquery';
 // Scripts
 import './counters';
-import './forms';
+// import './forms';
