@@ -1,6 +1,7 @@
 // Styles
 import '../scss/master.scss';
+// jQuery - parcel wants it imported like this
+import './jquery';
 // Scripts
 import './counters';
-// Not using this for now, relying on HTML form validation
-// import './forms';
+import './forms';
