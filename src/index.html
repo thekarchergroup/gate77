@@ -171,9 +171,7 @@
             </ul>
           </div>
           <div class="column col-8 col-md-12 take-flight__form">
-            <form action method="post" netlify netlify-recaptcha id="contact-form">
-              <!-- Hidden form name for netlify -->
-              <input type="hidden" name="form-name" value="Take Flight">
+            <form method="post" name="Gate 77 Contact" netlify netlify-recaptcha>
               <div class="form-group form-name">
                 <label class="form-label" for="name">Name</label>
                 <input class="form-input"  type="text" name="name" id="name" pattern="[A-Za-z ]+" oninvalid="this.setCustomValidity('Name must be letters and spaces only')" oninput="this.setCustomValidity('')" placeholder="Your Name" required>
