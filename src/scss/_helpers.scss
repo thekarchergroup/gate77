@@ -2,8 +2,9 @@ img, textarea {
   display: block;
   max-width: 100%;
 }
-// Tel links
-a[href^="tel"], a[href^="tel"]:hover {
+// Mail and tel links
+a[href^="tel"], a[href^="tel"]:hover,
+a[href^="mailto"], a[href^="mailto"]:hover {
   color: inherit;
   text-decoration: none;
 }
