@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/parcel ./src/index.html",
-    "build": "./node_modules/.bin/parcel build ./src/index.html; cp ./robots.txt ./dist/robots.txt",
+    "build": "./node_modules/.bin/parcel build ./src/index.html --no-minify; cp ./robots.txt ./dist/robots.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
