@@ -191,7 +191,7 @@
             </ul>
           </div>
           <div class="column col-8 col-md-12 take-flight__form">
-            <form method="post" name="Gate 77 Contact" netlify>
+            <form method="post" name="Gate 77 Contact" netlify netlify-honeypot="bot-field">
               <div class="form-group form-name">
                 <label class="form-label" for="name">Name</label>
                 <input class="form-input"  type="text" name="name" id="name" pattern="[A-Za-z ]+" oninvalid="this.setCustomValidity('Name must be letters and spaces only')" oninput="this.setCustomValidity('')" placeholder="Your Name" required>
@@ -212,6 +212,7 @@
                   <span>I’m a current tenant requesting service (check if yes)</span>
                 </label>
               </div>
+              <input type="text" name="bot-field" value="" class="d-invisible">
               <button type="submit" name="submit" class="btn btn-primary take-flight__form-submit">I'm Interested</button>
             </form>
           </div>
