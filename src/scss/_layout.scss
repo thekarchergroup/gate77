@@ -293,6 +293,9 @@
         }
       }
     }
+    .form-recaptcha {
+	    overflow: hidden;
+    }
     &-submit {
       margin: 0 auto;
       @include bp(large) {
