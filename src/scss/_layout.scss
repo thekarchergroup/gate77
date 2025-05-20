@@ -1,3 +1,5 @@
+@import "./_mixins.scss";
+
 .container {
   max-width: 1440px;
   padding: 0 1.5rem;
@@ -5,8 +7,8 @@
 // Hero
 .hero {
   // @include laser;
-  background: url('../img/property-front-rendering.png') no-repeat,
-              linear-gradient(180deg, #007EC0 0%, rgba(0,72,140,0) 100%);
+  background: url("../img/property-front-rendering.png") no-repeat,
+    linear-gradient(180deg, #007ec0 0%, rgba(0, 72, 140, 0) 100%);
   background-size: cover;
   background-position: top center;
   color: $light-color;
@@ -53,7 +55,7 @@
     margin: 0 0 1rem 0;
   }
   &__subhead {
-    font-size: .975em;
+    font-size: 0.975em;
     @include bp(xl) {
       font-size: 1.333em;
     }
@@ -61,12 +63,12 @@
   }
   &__cta {
     text-transform: uppercase;
-    box-shadow: 4.9px 6.3px 13px 0 rgba(0,0,0,0.2);
+    box-shadow: 4.9px 6.3px 13px 0 rgba(0, 0, 0, 0.2);
   }
 }
 // Overview
 .overview {
-  background: radial-gradient(#FEFEFE, #DAD9D7);
+  background: radial-gradient(#fefefe, #dad9d7);
   padding: 4rem 0;
   @include bp(xl) {
     padding: 8.889rem 0;
@@ -74,7 +76,8 @@
   p {
     margin-bottom: 3.556rem;
   }
-  &__stat, &__stat-title {
+  &__stat,
+  &__stat-title {
     text-align: center;
     display: block;
     line-height: 1;
@@ -84,7 +87,7 @@
     @include bp(xl) {
       font-size: 5.333em;
     }
-    font-family: 'bebas-neue';
+    font-family: "bebas-neue";
     color: $dark-green;
     margin-bottom: 1.25rem;
   }
@@ -110,9 +113,10 @@
   @include bp(xl) {
     padding: 8.889rem 0;
   }
-  h2 { // Benefits title
+  h2 {
+    // Benefits title
     color: $dark-color;
-    font-family: 'open-sans';
+    font-family: "open-sans";
     font-weight: 600;
     font-size: 1.333em;
     margin: 2rem 0;
@@ -120,7 +124,8 @@
       margin: 0 0 2rem 0;
     }
   }
-  ul { // Benefits & amentities
+  ul {
+    // Benefits & amentities
     display: flex;
     flex-flow: row wrap;
     margin: 0;
@@ -128,7 +133,7 @@
     li {
       width: 100%;
       margin-bottom: 1.25rem;
-      font-size: .8em;
+      font-size: 0.8em;
       @include bp(small) {
         font-size: 1em;
       }
@@ -139,7 +144,8 @@
       &:last-child {
         margin-bottom: 0;
       }
-      i { // Fontawesome icon
+      i {
+        // Fontawesome icon
         width: 32px;
         text-align: center;
         margin-right: 1.333rem;
@@ -203,10 +209,11 @@
   &__connect {
     padding-right: 3rem;
     margin-bottom: 2rem;
-    @include bp(xl)
-    h2 {
-      color: $light-color;
-      font-size: 2.667em;
+    @include bp(xl) {
+      h2 {
+        color: $light-color;
+        font-size: 2.667em;
+      }
     }
     address {
       margin: 1.833rem 0;
@@ -230,16 +237,17 @@
     }
     label {
       font-size: 1.111em;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
     input {
       height: 2.667rem;
-      box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.2);
+      box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
     }
     textarea {
       width: 100%;
     }
-    .form-name, .form-email {
+    .form-name,
+    .form-email {
       width: 47%;
       @include bp(xs) {
         width: 100%;
@@ -267,22 +275,22 @@
           width: 1.778em;
           height: 1.778em;
           margin: 0 1.25rem 0 0;
-          box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.2);
+          box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
           position: relative;
           cursor: pointer;
           &:after {
-              content: "";
-              position: absolute;
-              display: none;
-              left: 11px;
-              top: 2px;
-              width: 14px;
-              height: 26px;
-              border: solid white;
-              border-width: 0 4px 4px 0;
-              -webkit-transform: rotate(45deg);
-              -ms-transform: rotate(45deg);
-              transform: rotate(45deg);
+            content: "";
+            position: absolute;
+            display: none;
+            left: 11px;
+            top: 2px;
+            width: 14px;
+            height: 26px;
+            border: solid white;
+            border-width: 0 4px 4px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
           }
         }
         input:checked ~ .checkbox {
@@ -294,7 +302,7 @@
       }
     }
     .form-recaptcha {
-	    overflow: hidden;
+      overflow: hidden;
     }
     &-submit {
       margin: 0 auto;
@@ -302,7 +310,7 @@
         margin: 0;
       }
       text-transform: uppercase;
-      box-shadow: 4.9px 6.3px 13px 0 rgba(0,0,0,0.2);
+      box-shadow: 4.9px 6.3px 13px 0 rgba(0, 0, 0, 0.2);
     }
   }
   &__logo-bottom {
@@ -314,6 +322,6 @@
 }
 // Google reCAPTCHA
 .g-recaptcha {
-	transform: scale(.9);
-    transform-origin: left;
+  transform: scale(0.9);
+  transform-origin: left;
 }
