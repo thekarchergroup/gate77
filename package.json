@@ -2,7 +2,6 @@
   "name": "gate77",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/parcel ./src/index.html",
     "build": "./node_modules/.bin/parcel build ./src/index.html --no-minify; cp ./robots.txt ./dist/robots.txt",
@@ -20,11 +19,16 @@
   },
   "homepage": "https://github.com/thekarchergroup/gate77#readme",
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@parcel/packager-raw-url": "^2.15.1",
+    "@parcel/packager-xml": "^2.15.1",
+    "@parcel/transformer-sass": "^2.15.1",
+    "@parcel/transformer-webmanifest": "^2.15.1",
+    "@parcel/transformer-xml": "^2.15.1",
     "jquery": "^3.3.1",
-    "node-sass": "^4.9.0",
-    "parcel-bundler": "^1.7.1",
-    "spectre.css": "^0.5.1"
+    "parcel": "^2.15.1",
+    "spectre.css": "^0.5.9"
   },
   "dependencies": {
     "counter": "^0.1.1",
